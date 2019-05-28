@@ -12,9 +12,9 @@
  
  <properties>
       <property name="driver" value="com.mysql.jdbc.Driver"/>
-    <property name="url" value="jdbc:mysql://localhost:3306/CRM?allowMultiQueries=true"/>
-    <property name="username" value="root"/>
-    <property name="password" value="123"/>
+    <property name="url" value="jdbc:mysql://118.89.55.123:3306/CRM?allowMultiQueries=true"/>
+    <property name="username" value="crm_group"/>
+    <property name="password" value="Aa@218218"/>
  </properties>
  	<settings>
 		<setting name="mapUnderscoreToCamelCase" value="true"/>	
