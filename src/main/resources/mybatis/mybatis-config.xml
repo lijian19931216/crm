@@ -13,7 +13,7 @@
  	<settings>
 		<setting name="mapUnderscoreToCamelCase" value="true"/>
 		<!-- 开启mybatis二级缓存 -->	
-		<setting name="cacheEnabled" value="true"/>
+		<setting name="cacheEnabled" value="false"/>
 	</settings>
  
   <!-- 使用别名优化mybatis配置 -->

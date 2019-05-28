@@ -186,9 +186,9 @@
         			if(result.success){
         				console.log(result.data);
         				form.val('myform',result.data[0]);
-        				//$("#contactIdSelect").append("<option selected value='"+result.data[0].contactId+"'>"+result.data[0].linkman.name+"</option>");
+        				// $("#contactIdSelect").append("<option selected value='"+result.data[0].contactId+"'>"+result.data[0].linkman.name+"</option>");
         				$("#customerSelect").val(result.data[0].customer.name);
-        				$("#contactIdSelect").val(result.data[0].linkman.officePhone);
+        				$("#contactIdSelect").val(result.data[0].linkman.name);
         				//设置富文本框的内容
         				editor.txt.html(result.data[0].description);
         			}
@@ -249,7 +249,7 @@
         }
         
         //加载销售机会下拉框
-       /*  function loadSelect(selectName){
+        function loadSelect(selectName){
             var name = '';
             if(selectName == 'sourceSelect'){
                 name = "销售机会来源";
@@ -274,14 +274,14 @@
                         for(i = 0 ; i < types.length ; i++){
                             html += "<option value='"+types[i].name+"'>"+types[i].name+"</option>";
                         }
-                        $("#"+selectName).html(html);  
+                        $("#"+selectName).html(html);
                     }else {
                         layer.msg("读取数据出错！");
                     }
                 }
             });
         }
-         */
+
 
         function loadAllSelect(){
             loadCustomerSelect();//加载客户下拉框

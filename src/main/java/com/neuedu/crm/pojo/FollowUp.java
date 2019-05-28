@@ -3,6 +3,8 @@ package com.neuedu.crm.pojo;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+import com.neuedu.crm.utils.LocalDateTimeUtil;
+
 /**
  * follow_up
  * @author 
@@ -67,8 +69,8 @@ public class FollowUp implements Serializable {
         this.id = id;
     }
 
-    public LocalDateTime getTime() {
-        return time;
+    public String getTime() {
+        return LocalDateTimeUtil.formatTime(this.time, "yyyy年MM月dd日 HH:mm:ss");
     }
 
     public void setTime(LocalDateTime time) {
