@@ -6,23 +6,17 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.neuedu.crm.mapper.CustomerMapper;
+import com.neuedu.crm.mapper.SaleOpportunityMapper;
+import com.neuedu.crm.mapper.UserMapper;
+import com.neuedu.crm.pojo.*;
+import com.neuedu.crm.pojo.SaleOpportunityExample.Criteria;
+import com.neuedu.crm.service.ISaleOpportunityService;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.neuedu.crm.mapper.CustomerMapper;
-import com.neuedu.crm.mapper.SaleOpportunityMapper;
-import com.neuedu.crm.mapper.UserMapper;
-import com.neuedu.crm.pojo.Customer;
-import com.neuedu.crm.pojo.CustomerExample;
-import com.neuedu.crm.pojo.Pager;
-import com.neuedu.crm.pojo.SaleOpportunity;
-import com.neuedu.crm.pojo.SaleOpportunityExample;
-import com.neuedu.crm.pojo.User;
-import com.neuedu.crm.pojo.UserExample;
-import com.neuedu.crm.pojo.SaleOpportunityExample.Criteria;
-import com.neuedu.crm.service.ISaleOpportunityService;
 
 /**
  * 

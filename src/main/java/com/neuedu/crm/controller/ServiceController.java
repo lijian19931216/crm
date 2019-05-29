@@ -6,6 +6,13 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.neuedu.crm.pojo.*;
+import com.neuedu.crm.pojo.ServiceExample.Criteria;
+import com.neuedu.crm.service.ICustomerService;
+import com.neuedu.crm.service.IServiceService;
+import com.neuedu.crm.service.IServiceTransferService;
+import com.neuedu.crm.utils.Operation;
+
 import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
@@ -15,19 +22,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.neuedu.crm.pojo.Customer;
-import com.neuedu.crm.pojo.CustomerExample;
-import com.neuedu.crm.pojo.Service;
-import com.neuedu.crm.pojo.ServiceExample;
-import com.neuedu.crm.pojo.User;
-import com.neuedu.crm.pojo.ServiceExample.Criteria;
-import com.neuedu.crm.pojo.ServiceTransfer;
-import com.neuedu.crm.pojo.ServiceTransferExample;
-import com.neuedu.crm.service.ICustomerService;
-import com.neuedu.crm.service.IServiceService;
-import com.neuedu.crm.service.IServiceTransferService;
-import com.neuedu.crm.utils.Operation;
 
 /**
  * 
